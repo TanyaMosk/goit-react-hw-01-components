@@ -18,14 +18,9 @@ export const StatList = styled.ul`
   justify-content: space-between;
 `;
 
-export const ListItem = styled.li`
-width: 50px;
-padding: 15px 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: ${props => {
-    switch (props.color) {
+const getBackgroundColor = props => {
+    // eslint-disable-next-line
+    switch(props.color) { 
         case ".docx":
             return 'blue';
         case ".pdf":
@@ -35,5 +30,13 @@ background-color: ${props => {
         case ".psd":
             return 'green';
     }    
-}};
+}
+
+export const ListItem = styled.li`
+width: 50px;
+padding: 15px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:${getBackgroundColor};
 `;
