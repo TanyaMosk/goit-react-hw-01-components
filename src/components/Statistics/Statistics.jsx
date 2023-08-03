@@ -1,4 +1,4 @@
-import {Section,StatList,ListItem} from './Statistics.styled'
+import {Section,StatList,ListItem} from "./Statistics.styled"
 
 export const Statistics = ({ statistics }) => {
     // console.log(statistics);     
