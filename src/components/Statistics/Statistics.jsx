@@ -1,21 +1,20 @@
-// import {Section,StatList,ListItem} from './Statistics.styled'
+import {Section,StatList,ListItem} from './Statistics.styled'
 
 export const Statistics = ({ statistics }) => {
-    // console.log(statistics); 
-    
+    // console.log(statistics);     
     return (
-  <section>
+  <Section>
   <h2 className="title">Upload stats</h2>
 
-    <ul>
+    <StatList>
         {statistics.map(({ id, label, percentage }) => (
-    <li className="item" key={id} color={label}>
+    <ListItem className="item" key={id} color={label}>
       <span className="label">{label} </span>
       <span className="percentage">{percentage}%</span>
-    </li>   
+    </ListItem>   
     ))}      
-  </ul>
- </section>
+  </StatList>
+ </Section>
 );
 
 }
