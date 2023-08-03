@@ -57,7 +57,7 @@ export const Stats = styled.ul`
 `;
 
 export const List = styled.li`
-width: 50px;
+width: 80px;
 display: flex;
 flex-direction: column;
 align-items: center;

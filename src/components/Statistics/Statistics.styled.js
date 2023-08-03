@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Section = styled.section`
 background-color: white; 
   margin: auto;
-  width: 350px; 
+  width: 300px; 
    box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
@@ -33,7 +33,7 @@ const getBackgroundColor = props => {
 }
 
 export const ListItem = styled.li`
-width: 50px;
+width: 60px;
 padding: 15px 10px;
 display: flex;
 flex-direction: column;
