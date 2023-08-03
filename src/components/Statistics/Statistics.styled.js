@@ -11,6 +11,7 @@ background-color: white;
   display: flex;  
   flex-wrap: wrap;   
   justify-content: center;
+  margin-bottom: 60px;
 `;
 
 export const StatList = styled.ul`  
