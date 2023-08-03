@@ -23,7 +23,7 @@ import data from "./Statistics/data.json"
 import { FriendList } from "./Friends/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import transactions from "./TransactionHistory/transactions.json"
-// import { GlobalStyle } from "./GlobalStyle";
+import { GlobalStyle } from "./GlobalStyle";
 
 
 export const App = () => {
@@ -33,7 +33,7 @@ export const App = () => {
       <Statistics statistics={data} />
       <FriendList />
       <TransactionHistory transactions={transactions} />
-      
+      <GlobalStyle/>
     </div>
   );
 };
