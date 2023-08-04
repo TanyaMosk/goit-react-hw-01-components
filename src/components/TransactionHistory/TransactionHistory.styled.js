@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Table = styled.table`
-background-color: white; 
+  background-color: white; 
   margin: auto;
   width: 700px;
   border-radius: 5px;  
@@ -16,6 +16,7 @@ background-color: white;
 
 export const Thead = styled.thead`
 background-color: blue;
+color: white;
 height: 40px;
 `;
 
