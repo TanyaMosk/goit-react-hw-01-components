@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const List = styled.ul`
+export const ListItem = styled.li`
  background-color: white;
   padding:10px;
   margin: auto;

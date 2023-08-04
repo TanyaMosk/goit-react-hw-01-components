@@ -1,7 +1,6 @@
-import {Table,Tbody,Thead } from "./TransactionHistory.styled"
+import {Table,Tbody,Thead, TrLine } from "./TransactionHistory.styled"
 
-export const TransactionHistory = ({transactions}) => {
-    // console.log(transactions);
+export const TransactionHistory = ({transactions}) => {    
     return (
  <Table>
    <Thead>
@@ -11,14 +10,16 @@ export const TransactionHistory = ({transactions}) => {
       <th>Currency</th>
     </tr>
   </Thead>
-      {transactions.map(({id,type,amount,currency}) => (
-    <Tbody key={id}>
-    <tr>
-        <td>{type[0].toUpperCase()+type.substring(1)}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-    </tr>    
+      
+  <Tbody >
+    {transactions.map(({id,type,amount,currency}) => (
+    <TrLine key={id}>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </TrLine>
+    ))}    
   </Tbody>
-    ))}  
+     
 </Table>
 )}

@@ -1,10 +1,10 @@
 import {Section,StatList,ListItem} from "./Statistics.styled"
 
-export const Statistics = ({ statistics }) => {
+export const Statistics = ({ statistics,title }) => {
     // console.log(statistics);     
     return (
   <Section>
-  <h2 >Upload stats</h2>
+  <h2 >{title}</h2>
 
     <StatList>
         {statistics.map(({ id, label, percentage }) => (
