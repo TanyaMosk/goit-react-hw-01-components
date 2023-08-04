@@ -9,27 +9,26 @@ export const Profile = ({ userData }) => {
   <Descript >
     <Image
       src={avatar}
-      alt={username}
-            className="avatar" 
+      alt={username}      
       width={100}      
     />
       <Paragraph className="name">{username}</Paragraph>
-      <Paragraph className="tag">{tag}</Paragraph>
-      <Paragraph className="location">{location}</Paragraph>
+      <Paragraph >{tag}</Paragraph>
+      <Paragraph >{location}</Paragraph>
   </Descript>
 
-  <Stats className="stats">
+  <Stats >
     <List>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
+      <span>Followers</span>
+      <span >{stats.followers}</span>
     </List>
     <List>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views }</span>
+      <span >Views</span>
+      <span >{stats.views }</span>
     </List>
     <List>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
+      <span >Likes</span>
+      <span >{stats.likes}</span>
     </List>
   </Stats>
 </Container>

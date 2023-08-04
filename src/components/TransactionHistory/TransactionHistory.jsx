@@ -3,7 +3,7 @@ import {Table,Tbody,Thead } from "./TransactionHistory.styled"
 export const TransactionHistory = ({transactions}) => {
     // console.log(transactions);
     return (
- <Table className="transaction-history">
+ <Table>
    <Thead>
     <tr>
       <th>Type</th>

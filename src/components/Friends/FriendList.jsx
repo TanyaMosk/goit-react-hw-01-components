@@ -4,7 +4,7 @@ import friends from "./friends.json"
 export const FriendList = () => {
     
     return (
-        <ul className="friend-list">
+        <ul>
          <FriendListItem items={friends}/>
         </ul>
     )
