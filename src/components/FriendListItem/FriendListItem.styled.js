@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ListItem = styled.li`
- background-color: white;
+  background-color: white;
   padding:10px;
   margin: auto;
   width: 300px;
@@ -13,11 +13,11 @@ export const ListItem = styled.li`
   display: flex;  
   align-items: center;  
   gap: 20px; 
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   `;
 
+
 export const Icon = styled.span`
-color:${props =>(props.children.props.status === 'true' ? "green" : "red")}
+color:${props => (props.children.props.status === 'true' ? "green" : "red")
+    }
 `;
-
-

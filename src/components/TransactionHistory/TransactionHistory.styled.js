@@ -28,6 +28,10 @@ height: 30px;
 font-size: 14px;
 `;
 
+export const Type = styled.td`
+text-transform: capitalize;
+`;
+
 
 
 
