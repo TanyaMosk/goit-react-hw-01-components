@@ -3,9 +3,10 @@ import { Section, StatList, ListItem } from "./Statistics.styled"
 
 export const Statistics = ({ stats,title }) => {
       
-    return (
-  <Section>
-    <h2 >{title}</h2>
+  return (
+  <Section>  
+          
+      {title && <h2 title={title}>{title}</h2>}
 
     <StatList>
         {stats.map(({ id, label, percentage }) => (
@@ -19,8 +20,9 @@ export const Statistics = ({ stats,title }) => {
 }
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.exact({    
     label: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,    
     percentage: PropTypes.number.isRequired
